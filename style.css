@@ -115,3 +115,38 @@ footer{
 .navbar a:hover{
     color:#0b8f3a;
 }
+/* ===== Hero Banner ===== */
+
+.hero-banner{
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0b8f3a,#1fb85c);
+    color:white;
+}
+
+.hero-content h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#fff;
+    color:#0b8f3a;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero-btn:hover{
+    background:#f2f2f2;
+}
