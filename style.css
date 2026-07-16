@@ -150,3 +150,45 @@ footer{
 .hero-btn:hover{
     background:#f2f2f2;
 }
+/* ===== Product Grid ===== */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px 20px;
+}
+
+.product{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-8px);
+}
+
+.product img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.product h3{
+    margin:15px 0 10px;
+}
+
+.product p{
+    color:#0b8f3a;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.product button{
+    margin-bottom:20px;
+}
