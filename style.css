@@ -150,3 +150,106 @@ section{
 .section-title p{
     color:#666;
 }
+/* ================= Hero Section ================= */
+
+.hero{
+    background:#f8f9fa;
+}
+
+.hero .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h4{
+    color:#0b8f3a;
+    font-size:18px;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.hero-text h1{
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:20px;
+    color:#111;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.hero-image{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-image img{
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+/* ================= Categories ================= */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.category-card{
+    background:#fff;
+    padding:40px 20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.category-card h3{
+    color:#0b8f3a;
+    font-size:24px;
+}
+
+/* ================= Mobile ================= */
+
+@media(max-width:768px){
+
+.hero .container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:36px;
+}
+
+nav ul{
+    gap:12px;
+    font-size:14px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.logo img{
+    width:140px;
+}
+
+}
