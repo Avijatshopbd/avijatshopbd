@@ -1,64 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Avijat Shop BD | Premium Fashion Store</title>
+<title>Avijat Shop BD | Premium Fashion</title>
 
-<meta name="description" content="Premium Fashion for Men, Women & Kids">
+<meta name="description" content="Premium Fashion Clothing Store">
 
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 </head>
 
 <body>
 
-<!-- Offer Bar -->
+<!-- Header Start -->
 
-<div class="offer-bar">
-
-🎉 FLASH SALE | Up to 40% OFF | Free Delivery Over ৳1500 | Cash On Delivery Available
-
-</div>
-
-<!-- Header -->
-
-<header>
+<header class="header">
 
 <div class="container">
 
-<div class="logo">
+<a href="index.html" class="logo">
 
 <img src="images/logo.png" alt="Avijat Shop BD">
 
-</div>
+</a>
 
 <nav>
 
 <ul>
 
-<li><a href="#">Home</a></li>
+<li><a class="active" href="index.html">Home</a></li>
 
-<li><a href="#">Shop</a></li>
+<li><a href="shop.html">Shop</a></li>
 
-<li><a href="#">Men</a></li>
+<li><a href="about.html">About</a></li>
 
-<li><a href="#">Women</a></li>
-
-<li><a href="#">Kids</a></li>
-
-<li><a href="#">About</a></li>
-
-<li><a href="#">Contact</a></li>
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -66,11 +56,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <div class="header-icons">
 
-<i class="fa-solid fa-magnifying-glass"></i>
+<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
 
-<i class="fa-regular fa-heart"></i>
+<a href="#"><i class="fa-regular fa-heart"></i></a>
 
-<i class="fa-solid fa-cart-shopping"></i>
+<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
 
 </div>
 
@@ -78,35 +68,65 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 </header>
 
+<!-- Header End -->
+
 <!-- Hero Section -->
 
 <section class="hero">
 
-<div class="container">
+<div class="container hero-grid">
 
 <div class="hero-text">
 
-<h4>NEW COLLECTION 2026</h4>
+<span class="offer">
 
-<h1>Premium Fashion For Everyone</h1>
+🔥 NEW COLLECTION 2026
+
+</span>
+
+<h1>
+
+Premium Fashion
+
+For Everyone
+
+</h1>
 
 <p>
 
-Discover the latest fashion collections with premium quality at the best price.
+Welcome to Avijat Shop BD.
+
+Discover premium quality fashion
+
+for Men, Women and Kids.
 
 </p>
 
-<a href="#" class="btn">
+<div class="hero-buttons">
+
+<a href="shop.html" class="btn">
 
 Shop Now
 
 </a>
 
+<a href="https://wa.me/8801638987354"
+
+class="btn-outline">
+
+WhatsApp Order
+
+</a>
+
+</div>
+
 </div>
 
 <div class="hero-image">
 
-<img src="images/hero-banner.jpg" alt="Hero Banner">
+<img src="images/hero-banner.jpg"
+
+alt="Hero Banner">
 
 </div>
 
@@ -114,31 +134,91 @@ Shop Now
 
 </section>
 
-<!-- Categories -->
+<!-- Hero End -->
+
+<!-- Features -->
+
+<section class="features">
+
+<div class="container">
+
+<div class="feature-box">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>Fast Delivery</h3>
+
+<p>Delivery All Over Bangladesh</p>
+
+</div>
+
+<div class="feature-box">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Secure Payment</h3>
+
+<p>100% Safe Payment</p>
+
+</div>
+
+<div class="feature-box">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24/7 Support</h3>
+
+<p>Always Ready To Help</p>
+
+</div>
+
+</div>
+
+</section>
+
+   <!-- Featured Categories -->
 
 <section class="categories">
 
 <div class="container">
 
+<div class="section-title">
+
 <h2>Shop By Category</h2>
+
+<p>Choose Your Favourite Collection</p>
+
+</div>
 
 <div class="category-grid">
 
 <div class="category-card">
 
-<h3>Men</h3>
+<img src="images/category-men.jpg" alt="Men">
+
+<h3>Men Fashion</h3>
+
+<a href="shop.html">Explore</a>
 
 </div>
 
 <div class="category-card">
 
-<h3>Women</h3>
+<img src="images/category-women.jpg" alt="Women">
+
+<h3>Women Fashion</h3>
+
+<a href="shop.html">Explore</a>
 
 </div>
 
 <div class="category-card">
 
-<h3>Kids</h3>
+<img src="images/category-kids.jpg" alt="Kids">
+
+<h3>Kids Collection</h3>
+
+<a href="shop.html">Explore</a>
 
 </div>
 
@@ -147,91 +227,74 @@ Shop Now
 </div>
 
 </section>
+
 <!-- Featured Products -->
 
 <section class="featured-products">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-title">
-            <h2>Featured Products</h2>
-            <p>Handpicked products for you</p>
-        </div>
+<div class="section-title">
 
-        <div class="product-grid">
+<h2>Featured Products</h2>
 
-            <div class="product-card">
+<p>Best Selling Products</p>
 
-                <span class="badge">20% OFF</span>
+</div>
 
-                <img src="images/products/product1.jpg" alt="Product">
+<div class="product-grid">
 
-                <h3>Premium T-Shirt</h3>
+<div class="product-card">
 
-                <p class="price">
-                    <del>৳1200</del>
-                    <strong>৳960</strong>
-                </p>
+<img src="images/products/product1.jpg" alt="Product">
 
-                <a href="#" class="btn">View Details</a>
+<h3>Premium T-Shirt</h3>
 
-            </div>
+<p class="price">৳950</p>
 
-            <div class="product-card">
+<a href="shop.html" class="btn-small">View Details</a>
 
-                <span class="badge">NEW</span>
+</div>
 
-                <img src="images/products/product2.jpg" alt="Product">
+<div class="product-card">
 
-                <h3>Stylish Polo Shirt</h3>
+<img src="images/products/product2.jpg" alt="Product">
 
-                <p class="price">
-                    <strong>৳1350</strong>
-                </p>
+<h3>Stylish Polo</h3>
 
-                <a href="#" class="btn">View Details</a>
+<p class="price">৳1250</p>
 
-            </div>
+<a href="shop.html" class="btn-small">View Details</a>
 
-            <div class="product-card">
+</div>
 
-                <span class="badge">HOT</span>
+<div class="product-card">
 
-                <img src="images/products/product3.jpg" alt="Product">
+<img src="images/products/product3.jpg" alt="Product">
 
-                <h3>Casual Shirt</h3>
+<h3>Casual Shirt</h3>
 
-                <p class="price">
-                    <strong>৳1450</strong>
-                </p>
+<p class="price">৳1450</p>
 
-                <a href="#" class="btn">View Details</a>
+<a href="shop.html" class="btn-small">View Details</a>
 
-            </div>
+</div>
 
-        </div>
+<div class="product-card">
 
-    </div>
+<img src="images/products/product4.jpg" alt="Product">
 
-</section>
+<h3>Fashion Hoodie</h3>
 
-<!-- Flash Sale -->
+<p class="price">৳1850</p>
 
-<section class="flash-sale">
+<a href="shop.html" class="btn-small">View Details</a>
 
-    <div class="container">
+</div>
 
-        <h2>⚡ Flash Sale</h2>
+</div>
 
-        <p>
-            Limited Time Offer — Up to <strong>40% OFF</strong>
-        </p>
-
-        <a href="#" class="btn">
-            Shop Flash Sale
-        </a>
-
-    </div>
+</div>
 
 </section>
 
@@ -239,147 +302,218 @@ Shop Now
 
 <section class="offer-banner">
 
-    <div class="container">
+<div class="container">
 
-        <h2>Buy 2 Get 1 FREE</h2>
+<h2>
 
-        <p>
-            Premium Fashion Collection with Exclusive Deals.
-        </p>
+Special Offer
 
-    </div>
+</h2>
 
-</section>
-<!-- ================= New Arrival ================= -->
+<p>
 
-<section class="new-arrival">
+Buy Any 2 Products
 
-    <div class="container">
+Get Free Delivery
 
-        <div class="section-title">
-            <h2>New Arrivals</h2>
-            <p>Latest Fashion Collection</p>
-        </div>
+</p>
 
-        <div class="product-grid">
+<a href="shop.html" class="btn">
 
-            <div class="product-card">
-                <img src="images/products/product4.jpg" alt="New Arrival">
-                <h3>Premium Hoodie</h3>
-                <p class="price">৳1850</p>
-                <a href="#" class="btn">View Details</a>
-            </div>
-
-            <div class="product-card">
-                <img src="images/products/product5.jpg" alt="New Arrival">
-                <h3>Fashion Polo</h3>
-                <p class="price">৳1450</p>
-                <a href="#" class="btn">View Details</a>
-            </div>
-
-            <div class="product-card">
-                <img src="images/products/product6.jpg" alt="New Arrival">
-                <h3>Casual T-Shirt</h3>
-                <p class="price">৳950</p>
-                <a href="#" class="btn">View Details</a>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= Customer Reviews ================= -->
-
-<section class="reviews">
-
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Customer Reviews</h2>
-        </div>
-
-        <div class="review-card">
-
-            <h3>★★★★★</h3>
-
-            <p>
-                Excellent quality products and very fast delivery.
-                Highly recommended.
-            </p>
-
-            <strong>— Happy Customer</strong>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= Newsletter ================= -->
-
-<section class="newsletter">
-
-    <div class="container">
-
-        <h2>Subscribe Newsletter</h2>
-
-        <p>Get updates about new arrivals and special offers.</p>
-
-        <form>
-
-            <input type="email" placeholder="Enter your email">
-
-            <button type="submit">Subscribe</button>
-
-        </form>
-
-    </div>
-
-</section>
-
-<!-- ================= Footer ================= -->
-
-<footer>
-
-    <div class="container">
-
-        <h2>Avijat Shop BD</h2>
-
-        <p>
-            Premium Fashion for Men, Women & Kids
-        </p>
-
-        <p>
-
-            📍 Chawkbazar, Moulvibazar, Dhaka-1211
-
-        </p>
-
-        <p>
-
-            📞 +8801638987354
-
-        </p>
-
-        <p>
-
-            © 2026 Avijat Shop BD. All Rights Reserved.
-
-        </p>
-
-    </div>
-
-</footer>
-
-<!-- Floating WhatsApp -->
-
-<a href="https://wa.me/8801638987354" class="whatsapp">
-
-    <i class="fa-brands fa-whatsapp"></i>
+Shop Now
 
 </a>
 
+</div>
+
+</section>
+
+<!-- Customer Review -->
+
+<section class="reviews">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Customer Reviews</h2>
+
+</div>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+Excellent Quality.
+
+Highly Recommended.
+
+</p>
+
+<h4>Rahim</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+Very Fast Delivery.
+
+Loved It.
+
+</p>
+
+<h4>Karim</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+Premium Collection.
+
+Great Service.
+
+</p>
+
+<h4>Mostakim</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+    <!-- Newsletter -->
+
+<section class="newsletter">
+
+<div class="container">
+
+<h2>Subscribe Our Newsletter</h2>
+
+<p>
+
+Get latest offers, discounts and new arrivals.
+
+</p>
+
+<form>
+
+<input
+type="email"
+placeholder="Enter your email">
+
+<button type="submit">
+
+Subscribe
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="footer">
+
+<div class="container footer-grid">
+
+<div>
+
+<h3>Avijat Shop BD</h3>
+
+<p>
+
+Premium Fashion For Everyone.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📞 +8801638987354</p>
+
+<p>📧 info@avijatshopbd.com</p>
+
+<p>📍 Bangladesh</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+<p>
+
+© 2026 Avijat Shop BD.
+
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- WhatsApp Floating Button -->
+
+<a href="https://wa.me/8801638987354"
+
+class="whatsapp-float"
+
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- Back To Top -->
+
+<button id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
