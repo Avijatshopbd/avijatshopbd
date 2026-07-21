@@ -1,211 +1,218 @@
-/* =====================================
-   Avijat Shop BD v4.0
-===================================== */
+/* ==========================================
+   Avijat Shop BD
+   script.js v5.0
+   Part 1/3
+========================================== */
 
-// Back To Top Button
+// ===============================
+// Shopping Cart
+// ===============================
+
+const cartBtn = document.getElementById("cart-btn");
+const cartPanel = document.getElementById("cart-panel");
+const closeCart = document.getElementById("close-cart");
+const cartOverlay = document.getElementById("cart-overlay");
+
+if (cartBtn && cartPanel) {
+
+cartBtn.addEventListener("click", function(e) {
+
+e.preventDefault();
+
+cartPanel.classList.add("active");
+
+if(cartOverlay){
+
+cartOverlay.style.display="block";
+
+}
+
+});
+
+}
+
+if (closeCart && cartPanel) {
+
+closeCart.addEventListener("click", function() {
+
+cartPanel.classList.remove("active");
+
+if(cartOverlay){
+
+cartOverlay.style.display="none";
+
+}
+
+});
+
+}
+
+if (cartOverlay && cartPanel) {
+
+cartOverlay.addEventListener("click", function(){
+
+cartPanel.classList.remove("active");
+
+cartOverlay.style.display="none";
+
+});
+
+}
+
+// ===============================
+// Back To Top
+// ===============================
 
 const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function(){
 
-    if (window.scrollY > 300) {
-        topBtn.style.display = "flex";
-    } else {
-        topBtn.style.display = "none";
-    }
+if(window.scrollY > 300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+if(topBtn){
+
+topBtn.addEventListener("click", function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
 
 });
 
-topBtn.addEventListener("click", () => {
+});
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+}
+
+console.log("Avijat Shop BD Script Loaded");
+
+/* ==========================================
+   Search + Wishlist
+========================================== */
+
+// Search Button
+
+const searchBtn = document.querySelector(".fa-magnifying-glass");
+
+if(searchBtn){
+
+searchBtn.addEventListener("click",function(e){
+
+e.preventDefault();
+
+alert("Search feature is coming soon...");
 
 });
+
+}
+
+// Wishlist
+
+const wishlistBtns=document.querySelectorAll(".fa-heart");
+
+wishlistBtns.forEach(function(btn){
+
+btn.addEventListener("click",function(e){
+
+e.preventDefault();
+
+btn.classList.toggle("active");
+
+if(btn.classList.contains("active")){
+
+btn.style.color="red";
+
+}else{
+
+btn.style.color="";
+
+}
+
+});
+
+});
+
+// Product Button
+
+const productButtons=document.querySelectorAll(".btn-small");
+
+productButtons.forEach(function(btn){
+
+btn.addEventListener("click",function(){
+
+console.log("Product Clicked");
+
+});
+
+});
+
+/* ==========================================
+   Avijat Shop BD
+   script.js v5.0
+   Part 3/3
+========================================== */
 
 // ===============================
-// Newsletter
+// Newsletter Form
 // ===============================
 
 const newsletterForm = document.querySelector(".newsletter form");
 
 if (newsletterForm) {
 
-    newsletterForm.addEventListener("submit", function (e) {
+newsletterForm.addEventListener("submit", function(e) {
 
-        e.preventDefault();
+e.preventDefault();
 
-        alert("✅ Thank you for subscribing!");
+alert("Thank you for subscribing!");
 
-        newsletterForm.reset();
+newsletterForm.reset();
 
-    });
+});
 
 }
 
 // ===============================
-// Active Menu
+// Active Navigation
 // ===============================
 
-const currentPage = location.pathname.split("/").pop();
+const currentPage = window.location.pathname.split("/").pop();
 
-document.querySelectorAll("nav a").forEach(link => {
+const navLinks = document.querySelectorAll("nav ul li a");
 
-    if (link.getAttribute("href") === currentPage) {
+navLinks.forEach(function(link){
 
-        link.classList.add("active");
+const href = link.getAttribute("href");
 
-    }
+if(href === currentPage || (currentPage === "" && href === "index.html")){
 
-});// =====================================
-// Product Search
-// =====================================
-
-const searchBox = document.querySelector(".search-box");
-
-if (searchBox) {
-
-    searchBox.addEventListener("keyup", function () {
-
-        let value = this.value.toLowerCase();
-
-        let products = document.querySelectorAll(".product-card");
-
-        products.forEach(product => {
-
-            let name = product.querySelector("h3").innerText.toLowerCase();
-
-            if (name.indexOf(value) > -1) {
-
-                product.style.display = "block";
-
-            } else {
-
-                product.style.display = "none";
-
-            }
-
-        });
-
-    });
+link.classList.add("active");
 
 }
 
-// =====================================
-// Wishlist Demo
-// =====================================
-
-const wishlistButtons = document.querySelectorAll(".wishlist-btn");
-
-wishlistButtons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        button.innerHTML = "❤️ Added";
-
-        button.style.background = "#0a9c3f";
-
-        button.style.color = "#fff";
-
-    });
-
 });
 
-// =====================================
-// Quick View Demo
-// =====================================
+// ===============================
+// Console Message
+// ===============================
 
-const quickViewButtons = document.querySelectorAll(".quick-view-btn");
+console.log("====================================");
 
-quickViewButtons.forEach(button => {
+console.log(" Avijat Shop BD Website Loaded ");
 
-    button.addEventListener("click", () => {
+console.log(" Version : 5.0 ");
 
-        alert("Quick View feature will be available in the next update.");
+console.log(" Developed with ❤️");
 
-    });
-
-});
-
-// =====================================
-// Add To Cart Demo
-// =====================================
-
-const cartButtons = document.querySelectorAll(".btn");
-
-cartButtons.forEach(button => {
-
-    button.addEventListener("click", function () {
-
-        if (this.innerText === "Shop Now") return;
-
-        alert("🛒 Product added to cart.");
-
-    });
-
-});// =====================================
-// Category Filter
-// =====================================
-
-const categoryFilter = document.querySelector(".category-filter");
-
-if (categoryFilter) {
-
-    categoryFilter.addEventListener("change", function () {
-
-        alert("Category Filter Demo: " + this.value);
-
-    });
-
-}
-
-// =====================================
-// Hero Button Hover Effect
-// =====================================
-
-document.querySelectorAll(".btn").forEach(btn => {
-
-    btn.addEventListener("mouseenter", () => {
-
-        btn.style.transform = "scale(1.05)";
-
-    });
-
-    btn.addEventListener("mouseleave", () => {
-
-        btn.style.transform = "scale(1)";
-
-    });
-
-});
-
-// =====================================
-// Page Loaded
-// =====================================
-
-window.addEventListener("load", () => {
-
-    console.log("✅ Avijat Shop BD Loaded Successfully");
-
-});
-
-// =====================================
-// Copyright Year
-// =====================================
-
-const year = new Date().getFullYear();
-
-const copyright = document.querySelector(".copyright p");
-
-if (copyright) {
-
-    copyright.innerHTML =
-    `© ${year} Avijat Shop BD. All Rights Reserved.`;
-
-}
-
-// =====================================
-// End Of File
-// =====================================
+console.log("====================================");
